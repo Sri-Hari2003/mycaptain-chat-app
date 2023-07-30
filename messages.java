@@ -8,11 +8,8 @@ public class messages {
     long time_delivered;
     long time_received;
     long time_sent;
-
-    // Default constructor (optional but recommended)
     public messages() {}
 
-    // Constructor with parameters
     public messages(String text, String senderId, String receiverId, String type, long time_delivered, long time_received, long time_sent) {
         this.text = text;
         this.senderId = senderId;
@@ -81,10 +78,9 @@ public class messages {
     }
 
     public static void main(String[] args) {
-        // Create a messages object
+     
         messages msg = new messages("Hello", "1", "2", "text", 100, 115, 100);
 
-        // Access the fields using getters
         String messageText = msg.getText();
         String senderId = msg.getSenderId();
         String receiverId = msg.getReceiverId();
@@ -93,7 +89,6 @@ public class messages {
         long timeReceived = msg.getTime_received();
         long timeSent = msg.getTime_sent();
 
-        // Print the values to check
         System.out.println("Message: " + messageText);
         System.out.println("Sender ID: " + senderId);
         System.out.println("Receiver ID: " + receiverId);
